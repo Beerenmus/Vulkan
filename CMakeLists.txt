@@ -11,7 +11,10 @@ add_subdirectory(libs/SDL)
 find_package(Vulkan REQUIRED)
 
 add_executable(vulkan 
-    source/main.cpp
+    	source/main.cpp
+	source/window/IWindow.hpp
+	source/window/Window.hpp
+	source/window/Window.cpp
 )
 
 target_include_directories(vulkan PUBLIC libs/SDL/include)
